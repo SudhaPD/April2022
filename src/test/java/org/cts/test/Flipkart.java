@@ -39,14 +39,14 @@ public class Flipkart {
 ////		js.executeScript("arguments[0].scrollIntoView(true))",phnNames);
 //
 		WebElement nxtBtn = driver.findElement(By.xpath("//span[text()='Next']"));
-		nxtBtn.click(); //Thread.sleep(3000);
+		nxtBtn.click(); Thread.sleep(3000);
 		
 		System.out.println(phnNames.size());
 		for(int i=0;i<phnNames.size();i++) {
 		WebElement phnName = phnNames.get(i);
 //		System.out.println(phnName.getText());
 		}
-//		Thread.sleep(3000);
+		Thread.sleep(5000);
 		List<WebElement> phnPrc = driver.findElements(By.xpath("//div[@class='_30jeq3 _1_WHN1']"));
 		
 		System.out.println(phnPrc.size());
